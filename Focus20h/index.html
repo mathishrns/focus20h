@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Focus 20h</title>
+  <meta name="description" content="Ton espace de suivi : contenus, tests, habitudes et progression.">
+  <meta name="theme-color" content="#0b0f0d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Focus 20h">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <div>
+        <div class="brand-name">Focus 20h</div>
+        <div class="brand-date" id="today-label"></div>
+      </div>
+    </div>
+    <button class="icon-btn" data-act="openSettings" aria-label="Réglages">⚙️</button>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <nav class="tabbar" id="tabbar">
+    <button data-act="go" data-route="home"><span>🏠</span>Accueil</button>
+    <button data-act="go" data-route="contenus"><span>🎬</span>Contenus</button>
+    <button data-act="go" data-route="tests"><span>🧪</span>Tests</button>
+    <button data-act="go" data-route="moi"><span>💪</span>Moi</button>
+    <button data-act="go" data-route="semaine"><span>🗓️</span>Semaine</button>
+    <button data-act="go" data-route="guide"><span>🧭</span>Guide</button>
+  </nav>
+
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="lightbox" class="lightbox" hidden data-act="closeLightbox"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
